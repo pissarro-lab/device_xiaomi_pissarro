@@ -91,6 +91,9 @@ function blob_fixup {
 	vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service)
             "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
             ;;
+        vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc)
+            sed -i '/vts/Q' "$2"
+            ;;
     esac
 }
 
