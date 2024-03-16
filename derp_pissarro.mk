@@ -11,10 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/pissarro/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_pissarro
+#Derpfest Official
+DERP_BUILDTYPE := Official
+
+PRODUCT_NAME := derp_pissarro
 PRODUCT_DEVICE := pissarro
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
