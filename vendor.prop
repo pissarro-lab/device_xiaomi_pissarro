@@ -150,6 +150,9 @@ ro.netflix.bsp_rev=MTK6877-33678-1
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 
@@ -250,3 +253,4 @@ ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m
+
