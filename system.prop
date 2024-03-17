@@ -1,3 +1,10 @@
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.dexopt.secondary=true
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
