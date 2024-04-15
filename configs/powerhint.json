@@ -75,74 +75,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "DRAMOppMin",
-      "Path": "/proc/perfmgr/boost_ctrl/dram_ctrl/ddr",
-      "Values": [
-        "-1",
-        "0",
-        "1"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUSchedBoost",
-      "Path": "/sys/devices/system/cpu/sched/sched_boost",
-      "Values": [
-        "0",
-        "3",
-        "6"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CCIFreqMode",
-      "Path": "/proc/cpufreq/cpufreq_cci_mode",
-      "Values": [
-        "0",
-        "1"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    }, 
-    {
-      "Name": "UclampMin",
-      "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_uclamp_min",
-      "Values": [
-        "100",
-        "75",
-        "50",
-        "25",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "FGUclampMin",
-      "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_fg_uclamp_min",
-      "Values": [
-        "100",
-        "75",
-        "50",
-        "25",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TAUclampMin",
-      "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_ta_uclamp_min",
-      "Values": [
-        "100",
-        "75",
-        "50",
-        "25",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -202,18 +134,6 @@
       "Value": "1140000"
     },
     {
-      "PowerHint": "INTERACTION",
-      "Node": "DRAMOppMin",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CCIFreqMode",
-      "Duration": 0,
-      "Value": "1"
-    },
-    {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 3000,
@@ -224,36 +144,6 @@
       "Node": "CPULittleClusterMinFreq",
       "Duration": 3000,
       "Value": "1503000"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUSchedBoost",
-      "Duration": 3000,
-      "Value": "6"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "TAUclampMin",
-      "Duration": 3000,
-      "Value": "50"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "FGUclampMin",
-      "Duration": 3000,
-      "Value": "50"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "UclampMin",
-      "Duration": 3000,
-      "Value": "100"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "DRAMOppMin",
-      "Duration": 3000,
-      "Value": "1"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
