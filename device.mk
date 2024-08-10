@@ -66,6 +66,7 @@ PRODUCT_PACKAGES += \
     libdynproc \
     libhapticgenerator \
     libsqlite.vendor \
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_PACKAGES += \
     XiaomiDolby \
@@ -89,7 +90,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera_metadata.vendor \
-    libpng.vendor
+    libpng.vendor \
+    libexif.vendor \
+    libcodec2_soft_mtk_imaadpcmdec.vendor \
+    libcodec2_soft_mtk_msadpcmdec.vendor \
+    libcodec2_soft_mtk_alacdec.vendor \
+    libcodec2_soft_mtk_apedec.vendor \
+    libcodec2_soft_mtk_mp3dec.vendor \
+    libcodec2_soft_mtk_wmadec.vendor
 
 # Bluetooth
 PRODUCT_PACKAGES += \
