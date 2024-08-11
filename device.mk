@@ -66,7 +66,8 @@ PRODUCT_PACKAGES += \
     libdynproc \
     libhapticgenerator \
     libsqlite.vendor \
-    libstagefright_softomx_plugin.vendor
+    libstagefright_softomx_plugin.vendor \
+    libstagefright_foundation-v33.vendor
 
 PRODUCT_PACKAGES += \
     XiaomiDolby \
