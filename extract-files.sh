@@ -87,12 +87,12 @@ function blob_fixup {
 	vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
             sed -i 's/start/enable/' "$2"
             ;;
-	vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|\
+	vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b|\
 	vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service)
             "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
             ;;
-        vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc)
-            sed -i '/vts/Q' "$2"
+        vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc)
+            sed -i '/on property/{N;d;}' "$2"
             ;;
     esac
 }
